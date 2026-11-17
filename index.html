@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Discover Brunei Darussalam through its culture, heritage, attractions, local experiences and travel information.">
+
+  <title>Taste & Explore Brunei | Home</title>
+
+  <!-- Main Website Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Main Website JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- SKIP LINK FOR ACCESSIBILITY -->
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <!-- CUSTOM ANIMATED CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+
+  <!-- =========================================
+       HEADER AND NAVIGATION
+  ========================================== -->
+
+  <header class="site-header">
+
+    <div class="header-container">
+
+      <div class="logo">
+        <h1>Taste & Explore <span>Brunei</span></h1>
+        <p>A Guide to Culture, Active Living & Local Festivities</p>
+      </div>
+
+      <!-- DARK / LIGHT MODE -->
+      <button
+        id="themeToggle"
+        class="theme-btn"
+        type="button"
+        aria-label="Switch to dark mode"
+        aria-pressed="false">
+
+        🌙 Dark Mode
+
+      </button>
+
+    </div>
+
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="navbar" aria-label="Main Navigation">
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="index.html"
+             class="active"
+             aria-current="page">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="discover.html">
+            Best Times to Visit
+          </a>
+        </li>
+
+        <li>
+          <a href="attractions.html">
+            Attractions
+          </a>
+        </li>
+
+        <li>
+          <a href="plan.html">
+            Plan Your Trip
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html">
+            Events & Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =========================================
+       MAIN CONTENT
+  ========================================== -->
+
+  <main id="main-content">
+
+
+    <!-- =========================================
+         HOMEPAGE VIDEO HERO
+    ========================================== -->
+
+    <section class="hero-section">
+
+      <!-- BACKGROUND VIDEO -->
+      <video
+        class="hero-background-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        aria-label="Scenic video introducing Brunei Darussalam">
+
+        <source
+          src="brunei-tourism.mp4"
+          type="video/mp4">
+
+        Your browser does not support the video tag.
+
+      </video>
+
+
+      <!-- DARK VIDEO OVERLAY -->
+      <div class="hero-overlay"></div>
+
+
+      <!-- HERO TEXT -->
+      <div class="hero-text animated-fade-in">
+
+        <p class="hero-eyebrow">
+          WELCOME TO THE ABODE OF PEACE
+        </p>
+
+        <h2>
+          Discover the Beauty of Brunei Darussalam
+        </h2>
+
+        <p>
+          From breathtaking rainforests and royal heritage
+          to vibrant local traditions, discover a destination
+          where culture, nature and peaceful living come together.
+        </p>
+
+
+        <!-- HERO BUTTONS -->
+        <div class="hero-buttons">
+
+          <a
+            href="attractions.html"
+            class="cta-button primary">
+
+            Explore Attractions
+
+          </a>
+
+          <a
+            href="plan.html"
+            class="cta-button secondary">
+
+            Plan Your Visit
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT BRUNEI
+    ========================================== -->
+
+    <section class="content-block about-brunei">
+
+      <div class="about-text">
+
+        <p class="section-eyebrow">
+          ABOUT THE NATION
+        </p>
+
+        <h2 class="section-title">
+          Discover Brunei Darussalam
+        </h2>
+
+        <p>
+          Brunei Darussalam, also known as the Abode of Peace,
+          is a small yet remarkable country situated on the
+          northern coast of the island of Borneo in Southeast Asia.
+        </p>
+
+        <p>
+          Known for its rich Malay Islamic heritage, Brunei
+          combines traditional values with modern development.
+          Its peaceful atmosphere, beautiful Islamic architecture
+          and welcoming communities make it a unique destination
+          for visitors.
+        </p>
+
+        <p>
+          From the historic water village of Kampong Ayer
+          to the untouched tropical rainforests of Ulu Temburong,
+          Brunei offers opportunities to explore both cultural
+          heritage and natural beauty.
+        </p>
+
+        <a
+          href="https://www.bruneitourism.com/cultural-heritage/"
+          class="text-link"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Discover Brunei's Cultural Heritage →
+
+        </a>
+
+      </div>
+
+
+      <!-- ABOUT IMAGE -->
+      <div class="about-image">
+
+        <img
+          src="bandarku.jpeg"
+          alt="Scenic view of Bandar Seri Begawan, Brunei Darussalam">
+
+        <div class="image-caption">
+          Bandar Seri Begawan, the capital of Brunei Darussalam
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         WHY VISIT BRUNEI
+    ========================================== -->
+
+    <section class="content-block why-visit">
+
+      <div class="section-heading">
+
+        <p class="section-eyebrow">
+          EXPERIENCE THE DIFFERENCE
+        </p>
+
+        <h2 class="section-title">
+          Why Visit Brunei?
+        </h2>
+
+        <p>
+          Discover what makes Brunei a special destination
+          for travellers seeking culture, nature and relaxation.
+        </p>
+
+      </div>
+
+
+      <div class="card-grid">
+
+
+        <!-- CARD 1 -->
+        <article class="card">
+
+          <span class="card-icon">🌿</span>
+
+          <h3>Natural Beauty</h3>
+
+          <p>
+            Explore lush tropical rainforests, beautiful
+            landscapes and the biodiversity of Ulu Temburong
+            National Park.
+          </p>
+
+        </article>
+
+
+        <!-- CARD 2 -->
+        <article class="card">
+
+          <span class="card-icon">🕌</span>
+
+          <h3>Rich Cultural Heritage</h3>
+
+          <p>
+            Experience Brunei's Malay Islamic Monarchy identity,
+            traditional architecture, local customs and
+            historical landmarks.
+          </p>
+
+        </article>
+
+
+        <!-- CARD 3 -->
+        <article class="card">
+
+          <span class="card-icon">🍜</span>
+
+          <h3>Local Food & Hospitality</h3>
+
+          <p>
+            Discover traditional Bruneian dishes, local
+            food markets and the warmth of Brunei's
+            welcoming communities.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CULTURE AND HERITAGE
+    ========================================== -->
+
+    <section class="content-block culture-section">
+
+      <div class="section-heading">
+
+        <p class="section-eyebrow">
+          TRADITIONS AND IDENTITY
+        </p>
+
+        <h2 class="section-title">
+          Culture, Heritage & Traditions
+        </h2>
+
+        <p>
+          Brunei's identity is deeply rooted in its Malay
+          Islamic Monarchy philosophy, known as Melayu Islam
+          Beraja (MIB). Its traditions, values and customs
+          continue to shape everyday life.
+        </p>
+
+      </div>
+
+
+      <div class="culture-grid">
+
+
+        <!-- CULTURE CARD 1 -->
+        <article class="culture-card">
+
+          <img
+            src="mosque.jpeg"
+            alt="Sultan Omar Ali Saifuddien Mosque">
+
+          <div class="culture-card-content">
+
+            <span>RELIGION & ARCHITECTURE</span>
+
+            <h3>Islamic Heritage</h3>
+
+            <p>
+              Islam plays an important role in Brunei's
+              national identity. Its beautiful mosques,
+              religious celebrations and traditions reflect
+              the country's Islamic heritage.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- CULTURE CARD 2 -->
+        <article class="culture-card">
+
+          <img
+            src="kampong-ayer.jpeg"
+            alt="Traditional houses at Kampong Ayer">
+
+          <div class="culture-card-content">
+
+            <span>HISTORY & TRADITION</span>
+
+            <h3>Malay Culture</h3>
+
+            <p>
+              Brunei's Malay heritage can be experienced
+              through traditional clothing, language,
+              customs, handicrafts and the historic
+              water village of Kampong Ayer.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- CULTURE CARD 3 -->
+        <article class="culture-card">
+
+          <img
+            src="brunei-museum.jpeg"
+            alt="Brunei Museum and national heritage">
+
+          <div class="culture-card-content">
+
+            <span>HISTORY & IDENTITY</span>
+
+            <h3>National Heritage</h3>
+
+            <p>
+              Discover Brunei's history, royal heritage
+              and cultural identity through its historical
+              landmarks and heritage sites.
+            </p>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+
+      <!-- OFFICIAL HERITAGE RESOURCE -->
+      <div class="heritage-link">
+
+        <p>
+          Interested in learning more about Brunei's
+          cultural heritage and traditions?
+        </p>
+
+        <a
+          href="https://www.bruneitourism.com/cultural-heritage/"
+          class="cta-button primary"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Explore Cultural Heritage
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         LOCAL CUSTOMS AND ETIQUETTE
+    ========================================== -->
+
+    <section class="content-block etiquette-section">
+
+      <div class="section-heading">
+
+        <p class="section-eyebrow">
+          TRAVEL WITH RESPECT
+        </p>
+
+        <h2 class="section-title">
+          Local Customs & Visitor Etiquette
+        </h2>
+
+        <p>
+          Understanding local customs helps visitors
+          appreciate Brunei's culture and enjoy a
+          respectful travel experience.
+        </p>
+
+      </div>
+
+
+      <div class="card-grid">
+
+
+        <!-- CUSTOM 1 -->
+        <article class="card">
+
+          <span class="card-icon">👗</span>
+
+          <h3>Dress Respectfully</h3>
+
+          <p>
+            Visitors are encouraged to dress modestly,
+            especially when visiting mosques and religious
+            or government buildings. Follow the venue's
+            clothing requirements.
+          </p>
+
+        </article>
+
+
+        <!-- CUSTOM 2 -->
+        <article class="card">
+
+          <span class="card-icon">🤝</span>
+
+          <h3>Respect Local Traditions</h3>
+
+          <p>
+            Be considerate of religious practices and
+            local customs. During Ramadhan, be mindful
+            of public dining etiquette and follow
+            local guidance.
+          </p>
+
+        </article>
+
+
+        <!-- CUSTOM 3 -->
+        <article class="card">
+
+          <span class="card-icon">🕌</span>
+
+          <h3>Visiting Religious Sites</h3>
+
+          <p>
+            Remove footwear where required, maintain
+            respectful behaviour and follow visitor
+            instructions when entering mosques.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         EXPLORE MORE OF BRUNEI
+    ========================================== -->
+
+    <section class="content-block">
+
+      <div class="section-heading">
+
+        <p class="section-eyebrow">
+          YOUR JOURNEY STARTS HERE
+        </p>
+
+        <h2 class="section-title">
+          Explore More of Brunei
+        </h2>
+
+        <p>
+          Continue discovering Brunei through our travel
+          guides, featured destinations and local experiences.
+        </p>
+
+      </div>
+
+
+      <div class="card-grid">
+
+
+        <!-- DISCOVER PAGE -->
+        <article class="card">
+
+          <span class="card-icon">📅</span>
+
+          <h3>Best Times to Visit</h3>
+
+          <p>
+            Learn about Brunei's weather, festive seasons
+            and cultural celebrations to help plan your visit.
+          </p>
+
+          <a
+            href="discover.html"
+            class="text-link">
+
+            Discover the Best Time →
+
+          </a>
+
+        </article>
+
+
+        <!-- ATTRACTIONS PAGE -->
+        <article class="card">
+
+          <span class="card-icon">📍</span>
+
+          <h3>Key Attractions</h3>
+
+          <p>
+            Explore iconic landmarks, traditional villages,
+            family attractions and Brunei's natural landscapes.
+          </p>
+
+          <a
+            href="attractions.html"
+            class="text-link">
+
+            Explore Attractions →
+
+          </a>
+
+        </article>
+
+
+        <!-- PLAN PAGE -->
+        <article class="card">
+
+          <span class="card-icon">🧳</span>
+
+          <h3>Plan Your Trip</h3>
+
+          <p>
+            Find practical travel information, useful
+            recommendations and ideas for your Brunei itinerary.
+          </p>
+
+          <a
+            href="plan.html"
+            class="text-link">
+
+            Start Planning →
+
+          </a>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-content">
+
+      <div class="external-links">
+
+        <h4>Credible Travel Resources</h4>
+
+        <ul>
+
+          <li>
+            <a
+              href="https://www.bruneitourism.com"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              Official Brunei Tourism Portal
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.mprt.gov.bn"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              Ministry of Primary Resources and Tourism
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.gov.bn"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              Brunei Government Portal
+
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <p>
+        &copy; 2026 Taste &amp; Explore Brunei.
+        Student project for CS4127 Web Development.
+        This is not an official government website.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
+

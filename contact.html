@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Contact | Taste & Explore Brunei</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Custom Animated Cursor Elements -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>Taste & Explore <span>Brunei</span></h1>
+        <p>A Guide to Culture, Active Living & Local Festivities</p>
+      </div>
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch to dark mode" aria-pressed="false">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Best Times to Visit</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Events & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Header Banner -->
+    <section class="hero-section text-only-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-text animated-fade-in">
+        <h2>Local Events & Community Pop-Ups</h2>
+        <p>Stay updated with weekend thrift markets, night bazaars, and youth gatherings across Brunei.</p>
+      </div>
+    </section>
+
+    <!-- Organised Event Boxes Container -->
+    <section class="content-block">
+      <h2 class="section-title">Community Events & Local Experiences</h2>
+      <p>Explore examples of community activities in Brunei. Dates and availability can change, so check the organiser's latest announcements before visiting.</p>
+
+      <!-- Category Filter Buttons -->
+      <div class="filter-container">
+        <button class="filter-btn active" type="button" data-category="all" aria-pressed="true">All Events</button>
+        <button class="filter-btn" type="button" data-category="market" aria-pressed="false">Markets & Thrift</button>
+        <button class="filter-btn" type="button" data-category="culture" aria-pressed="false">Cultural & Bazaars</button>
+      </div>
+
+      <!-- Organized Event Cards Grid -->
+      <div class="event-cards-grid">
+        
+        <!-- Event Box 1 -->
+        <article class="event-box" data-category="culture">
+          <div class="event-date-badge">Seasonal / check dates</div>
+          <div class="event-content">
+            <span class="event-tag culture-tag">Cultural Week</span>
+            <h3>Islamic Cultural Activities</h3>
+            <p class="event-location">📍 Bandar Seri Begawan</p>
+            <p class="event-desc">Look out for cultural exhibitions, talks and community gatherings. Confirm current programmes with the event organiser.</p>
+          </div>
+        </article>
+
+        <!-- Event Box 2 -->
+        <article class="event-box" data-category="market">
+          <div class="event-date-badge">Dates vary</div>
+          <div class="event-content">
+            <span class="event-tag market-tag">Thrift & Flea</span>
+            <h3>Community Thrift Markets</h3>
+            <p class="event-location">📍 Rimba Point</p>
+            <p class="event-desc">Some community markets feature pre-loved clothing, handmade items and small local businesses. Check current event announcements.</p>
+          </div>
+        </article>
+
+        <!-- Event Box 3 -->
+        <article class="event-box" data-category="culture">
+          <div class="event-date-badge">Dates vary</div>
+          <div class="event-content">
+            <span class="event-tag culture-tag">Food Bazaar</span>
+            <h3>Gadong Night Market</h3>
+            <p class="event-location">📍 Gadong / Downtown BSB</p>
+            <p class="event-desc">Explore local food stalls and affordable Bruneian dishes. Opening days and locations may vary.</p>
+          </div>
+        </article>
+
+        <!-- Event Box 4 -->
+        <article class="event-box" data-category="market">
+          <div class="event-date-badge">Selected weekends</div>
+          <div class="event-content">
+            <span class="event-tag market-tag">Youth Gathering</span>
+            <h3>Youth Pop-Up Markets</h3>
+            <p class="event-location">📍 Salted Cafe</p>
+            <p class="event-desc">Look for local pop-ups featuring fashion, drinks, crafts and small creative businesses. Check the venue's latest schedule.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Vendor Enquiry Form Box -->
+    <section class="content-block">
+      <div class="card form-card">
+        <h2 class="section-title">Host a Pop-Up Booth / Contact Us</h2>
+        <p>Looking to ask a question or share a pop-up concept? Complete the form below. This demonstration checks the fields in your browser but does not send or store enquiries.</p>
+
+        <div id="formFeedback" class="feedback-msg" role="status" aria-live="polite"></div>
+
+        <form id="enquiryForm" action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" autocomplete="name" required placeholder="Enter your full name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="example@domain.com">
+          </div>
+
+          <div class="form-group">
+            <label for="topic">Enquiry Category:</label>
+            <select id="topic" name="topic" required>
+              <option value="">-- Select an option --</option>
+              <option value="general">General Tourist Information</option>
+              <option value="vendor">Vendor / Micro-Business Booth Registration</option>
+              <option value="events">Event Promotion Request</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message / Pop-Up Concept:</label>
+            <textarea id="message" name="message" required rows="5" placeholder="Share your inquiry or vendor concept..."></textarea>
+          </div>
+
+          <button type="submit" class="cta-button primary submit-btn">Send Enquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="external-links">
+        <h4>Credible Travel Resources</h4>
+        <ul>
+          <li><a href="https://www.bruneitourism.com" target="_blank" rel="noopener noreferrer">Official Brunei Tourism Portal</a></li>
+          <li><a href="https://www.mprt.gov.bn" target="_blank" rel="noopener noreferrer">Ministry of Primary Resources and Tourism</a></li>
+          <li><a href="https://www.gov.bn" target="_blank" rel="noopener noreferrer">Brunei Government Portal</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2026 Taste &amp; Explore Brunei. Student project for CS4127 Web Development. This is not an official government website.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

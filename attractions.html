@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractions | Taste & Explore Brunei</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>Taste & Explore <span>Brunei</span></h1>
+        <p>A Guide to Culture, Active Living & Local Festivities</p>
+      </div>
+      <button id="themeToggle" class="theme-btn" type="button"
+        aria-label="Switch to dark mode" aria-pressed="false">
+        🌙 Dark Mode
+      </button>
+    </div>
+
+    <nav class="navbar" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Best Times to Visit</a></li>
+        <li><a href="attractions.html" class="active" aria-current="page">Attractions</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+        <li><a href="contact.html">Events & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Introduction -->
+    <section class="content-block">
+      <h2 class="section-title">Discover Brunei's Key Attractions</h2>
+      <p>
+       
+        Brunei offers various many tourists attractions, varying from traditional mosques with beautiful architectures
+      , the largest water village in the world with rows of houses often nicknamed the "Venice of the East, 
+      places for entertainment from new events every month creating a new places to explore. 
+      </p>
+    </section>
+
+    <!-- Five-Destination Interactive Slideshow -->
+    <section class="content-block">
+      <h2 class="section-title">Featured Destinations</h2>
+
+      <div class="slideshow-container">
+
+        <!-- Slide 1: Mosque -->
+        <div class="slide fade active">
+          <img src="mosque.jpeg"
+            alt="Sultan Omar Ali Saifuddien Mosque with its golden dome and lagoon">
+          <div class="slide-caption">
+            <h3>Sultan Omar 'Ali Saifuddien Mosque</h3>
+            <p>An iconic landmark known for its golden dome and beautiful lagoon.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2: Kampong Ayer -->
+        <div class="slide fade">
+          <img src="kampong-ayer.jpeg"
+            alt="Traditional houses on stilts at Kampong Ayer">
+          <div class="slide-caption">
+            <h3>Kampong Ayer</h3>
+            <p>Explore Brunei's historic water village and its traditional riverside lifestyle.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3: Ulu Temburong -->
+        <div class="slide fade">
+          <img src="ulu-temburong.jpeg"
+            alt="Green rainforest canopy walkway at Ulu Temburong National Park">
+          <div class="slide-caption">
+            <h3>Ulu Temburong National Park</h3>
+            <p>Experience Brunei's tropical rainforest, wildlife and natural beauty.A place many tourists love to visit. </p>
+          </div>
+        </div>
+
+        <!-- Slide 4: Jerudong Park -->
+        <div class="slide fade">
+          <img src="jerudong-park.jpeg"
+            alt="Colourful amusement park rides at Jerudong Park">
+          <div class="slide-caption">
+            <h3>Jerudong Park</h3>
+            <p>A popular family attraction offering rides and entertainment.</p>
+          </div>
+        </div>
+
+        <!-- Slide 5: Brunei Museum -->
+        <div class="slide fade">
+          <img src="brunei-museum.jpeg"
+            alt="Exterior of the Brunei Museum building in Kota Batu">
+          <div class="slide-caption">
+            <h3>Brunei Museum</h3>
+            <p>Discover Brunei's history, culture and heritage. Currently temporarily closed for refurbishment, 
+              however there are other museums like the 'Energy Hub' or the 'Royal Regalia'. 
+            </p>
+          </div>
+        </div>
+
+        <!-- Slideshow Navigation -->
+        <button class="prev-btn" id="prevSlide" type="button"
+          aria-label="Previous slide">&#10094;</button>
+
+        <button class="next-btn" id="nextSlide" type="button"
+          aria-label="Next slide">&#10095;</button>
+
+      </div>
+    </section>
+
+    <!-- Destination Gallery and Lightbox -->
+    <section class="content-block">
+      <h2 class="section-title">Explore the Destinations</h2>
+      <p>Select a photograph to view a larger image of each attraction.</p>
+
+      <div class="card-grid">
+
+        <!-- Mosque Card -->
+        <article class="card gallery-card"
+          data-img="mosque.jpeg"
+          data-title="Sultan Omar 'Ali Saifuddien Mosque">
+          <img src="mosque.jpeg"
+            alt="Sultan Omar Ali Saifuddien Mosque"
+            class="card-img">
+          <h3>Sultan Omar 'Ali Saifuddien Mosque</h3>
+          <p>
+            Located in the heart of Bandar Seri Begawan, this famous mosque
+            is recognised for its golden dome, marble architecture and
+            peaceful lagoon.
+          </p>
+        </article>
+
+        <!-- Kampong Ayer Card -->
+        <article class="card gallery-card"
+          data-img="kampong-ayer.jpeg"
+          data-title="Kampong Ayer">
+          <img src="kampong-ayer.jpeg"
+            alt="Traditional stilt houses at Kampong Ayer"
+            class="card-img">
+          <h3>Kampong Ayer</h3>
+          <p>
+            Known as the Water Village, Kampong Ayer is a historic settlement
+            featuring traditional houses built on stilts above the Brunei River.
+          </p>
+        </article>
+
+        <!-- Ulu Temburong Card -->
+        <article class="card gallery-card"
+          data-img="ulu-temburong.jpeg"
+          data-title="Ulu Temburong National Park">
+          <img src="ulu-temburong.jpeg"
+            alt="Rainforest scenery at Ulu Temburong National Park"
+            class="card-img">
+          <h3>Ulu Temburong National Park</h3>
+          <p>
+            Explore untouched rainforest, nature trails and canopy walkways
+            in one of Brunei's most remarkable natural destinations.
+          </p>
+        </article>
+
+        <!-- Jerudong Park Card -->
+        <article class="card gallery-card"
+          data-img="jerudong-park.jpeg"
+          data-title="Jerudong Park">
+          <img src="jerudong-park.jpeg"
+            alt="Amusement rides at Jerudong Park"
+            class="card-img">
+          <h3>Jerudong Park</h3>
+          <p>
+            Enjoy a fun-filled visit to this amusement park, with
+            entertainment and attractions for families and visitors.
+          </p>
+        </article>
+
+        <!-- Brunei Museum Card -->
+        <article class="card gallery-card"
+          data-img="brunei-museum.jpeg"
+          data-title="Brunei Museum">
+          <img src="brunei-museum.jpeg"
+            alt="Brunei Museum building in Kota Batu"
+            class="card-img">
+          <h3>Brunei Museum</h3>
+          <p>
+            Located in Kota Batu, the museum is an important heritage site
+            dedicated to Brunei's history and culture. It is temporarily
+            closed for refurbishment.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Official Tourism Resource -->
+    <section class="content-block">
+      <h2 class="section-title">Discover More of Brunei</h2>
+      <p>
+        For more information about attractions, activities and travel
+        experiences, visit the official Brunei Tourism website.
+      </p>
+      <a class="cta-button primary"
+        href="https://www.bruneitourism.com/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Visit Brunei Tourism
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Destination image preview"
+    aria-hidden="true">
+
+    <button class="close-modal" id="closeModal"
+      type="button" aria-label="Close image preview">
+      &times;
+    </button>
+
+    <img class="modal-content" id="modalImg" alt="Enlarged destination view">
+    <div id="modalCaption" class="modal-caption"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="external-links">
+        <h4>Credible Travel Resources</h4>
+        <ul>
+          <li>
+            <a href="https://www.bruneitourism.com"
+              target="_blank" rel="noopener noreferrer">
+              Official Brunei Tourism Portal
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mprt.gov.bn"
+              target="_blank" rel="noopener noreferrer">
+              Ministry of Primary Resources and Tourism
+            </a>
+          </li>
+          <li>
+            <a href="https://www.gov.bn"
+              target="_blank" rel="noopener noreferrer">
+              Brunei Government Portal
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        &copy; 2026 Taste &amp; Explore Brunei.
+        Student project for CS4127 Web Development.
+        This is not an official government website.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

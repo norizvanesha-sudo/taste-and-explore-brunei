@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Visit | Taste & Explore Brunei</title>
+
+  <!-- External Stylesheet strictly required (No inline CSS) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Custom Glowing Animated Cursor Elements -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Header & Navigation Section -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>Taste & Explore <span>Brunei</span></h1>
+        <p>A Guide to Culture, Active Living & Local Festivities</p>
+      </div>
+
+      <!-- Feature 1: Dark / Light Mode Switcher Button -->
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch to dark mode" aria-pressed="false">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Global Navigation Menu -->
+    <nav class="navbar" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Best Times to Visit</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="plan.html" class="active" aria-current="page">Plan Your Trip</a></li>
+        <li><a href="contact.html">Events & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Header Hero Banner -->
+    <section class="hero-section text-only-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-text animated-fade-in">
+        <h2>Plan Your Ideal Brunei Experience</h2>
+        <p>Practical travel guidance, getting around town, and creating your peaceful weekend routine.</p>
+      </div>
+    </section>
+
+    <!-- Essential Travel Cards Grid -->
+    <section class="content-block">
+      <h2 class="section-title">Essential Visitor Guide</h2>
+      <p>Everything you need to know before packing your bags for Bandar Seri Begawan:</p>
+
+      <div class="card-grid">
+        <!-- Card 1: Getting Around -->
+        <article class="card hover-effect plan-card">
+          <div class="card-icon">🚖</div>
+          <h3>Getting Around</h3>
+          <p>Download ride-hailing apps like <strong>DART</strong> for easy travel between cafes, night markets, and Masjids. Public buses and water taxis across the Brunei River are also readily available.</p>
+        </article>
+
+        <!-- Card 2: Visa & Currency -->
+        <article class="card hover-effect plan-card">
+          <div class="card-icon">💳</div>
+          <h3>Visa & Currency</h3>
+          <p>Brunei uses the <strong>Brunei Dollar (BND)</strong>, which is pegged 1:1 with the Singapore Dollar (SGD). Cash is recommended for Pasar Malams and youth flea markets.</p>
+        </article>
+
+        <!-- Card 3: Peaceful Routine -->
+        <article class="card hover-effect plan-card">
+          <div class="card-icon">☕</div>
+          <h3>Peaceful Routine</h3>
+          <p>Plan your mornings early for cool runs or coffee at local cafes. Keep Friday afternoons (12:00 PM – 2:00 PM) free as all local shops close for prayers.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Feature 2: Prettified Interactive Bucket List Box -->
+    <section class="content-block">
+      <div class="card interactive-routine-card">
+        <div class="routine-header">
+          <span class="badge-tag">Interactive Planner</span>
+          <h2 class="section-title">Build Your Peaceful Weekend Routine</h2>
+          <p>Select your favorite activities to calculate your custom trip score!</p>
+        </div>
+
+        <form id="bucketListForm" class="routine-form">
+          <div class="routine-item">
+            <input type="checkbox" id="item1" value="25" class="bucket-item">
+            <label for="item1">
+              <span class="custom-check"></span>
+              <span class="item-text">
+                <strong>Sunday Morning Activity:</strong> Run or cycle on car-free roads during Bandarku Ceria.
+              </span>
+            </label>
+          </div>
+
+          <div class="routine-item">
+            <input type="checkbox" id="item2" value="25" class="bucket-item">
+            <label for="item2">
+              <span class="custom-check"></span>
+              <span class="item-text">
+                <strong>Local Foodie Tasting:</strong> Enjoy $1 Nasi Katok & Satay at Pasar Malam Gadong.
+              </span>
+            </label>
+          </div>
+
+          <div class="routine-item">
+            <input type="checkbox" id="item3" value="25" class="bucket-item">
+            <label for="item3">
+              <span class="custom-check"></span>
+              <span class="item-text">
+                <strong>Youth Pop-Up Hunt:</strong> Explore thrifted fashion & crafts at Salted Cafe or Rimba Point.
+              </span>
+            </label>
+          </div>
+
+          <div class="routine-item">
+            <input type="checkbox" id="item4" value="25" class="bucket-item">
+            <label for="item4">
+              <span class="custom-check"></span>
+              <span class="item-text">
+                <strong>Late Night Sahur Cafe Visit:</strong> Experience late-night artisan dining during Ramadhan.
+              </span>
+            </label>
+          </div>
+        </form>
+
+        <!-- Score Meter Container -->
+        <div class="routine-score-box">
+          <div class="score-header">
+            <span>Peaceful Routine Score:</span>
+            <span id="scoreText" class="score-number">0%</span>
+          </div>
+          <div class="progress-bar-container">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+          <p id="scoreMessage" class="score-message" aria-live="polite">Check boxes above to start building your itinerary!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Required External Links -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="external-links">
+        <h4>Credible Travel Resources</h4>
+        <ul>
+          <li><a href="https://www.bruneitourism.com" target="_blank" rel="noopener noreferrer">Official Brunei Tourism Portal</a></li>
+          <li><a href="https://www.mprt.gov.bn" target="_blank" rel="noopener noreferrer">Ministry of Primary Resources and Tourism</a></li>
+          <li><a href="https://www.gov.bn" target="_blank" rel="noopener noreferrer">Brunei Government Portal</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2026 Taste &amp; Explore Brunei. Student project for CS4127 Web Development. This is not an official government website.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
